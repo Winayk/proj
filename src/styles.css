@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+.six {
+    width: 30%;
+    list-style-type: none;
+    display: inline-block;
+    padding: 5px;
+    text-align: justify;
+}
+li{
+    width: auto;
+    top: 0px;
+}
+ul{
+    width: auto;
+    top: 0px;
+}

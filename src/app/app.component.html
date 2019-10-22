@@ -1,0 +1,32 @@
+<h1>Event binding 1</h1>
+<br>
+<app-dirifswitchfor></app-dirifswitchfor>
+<router-outlet></router-outlet>
+<hr>
+
+
+<h1 id="head1">THis is another example of property binding</h1>
+<div>
+  <button (click)='list = option1'> fruits</button>
+  <button (click)='list = option2'> things</button>
+  <button (click)='list = option3'> para1</button>
+  <button (click)='list = option4'> era2</button>
+  <button (click)='list = option5'> eing3</button>
+  <button (click)='list = option6'> podne</button>
+
+</div>
+<div class="six">
+    <ul *ngFor="let fruit of list.fruits" style="background-color: chartreuse; color: red;">
+        <li [textContent]="fruit"></li>
+      </ul>
+</div>
+<div class="six">
+    <ul *ngFor="let lmt of list.limit" style="background-color: darkmagenta; color:chartreuse;">
+        <li [textContent]="lmt"></li>
+      </ul>      
+</div>
+<div  class="six">
+    <ul *ngFor="let fruit of list.fruits" style="background-color:slategrey; color:red;">
+        <li>{{fruit}} </li>
+      </ul>
+</div>
